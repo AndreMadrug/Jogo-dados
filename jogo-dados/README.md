@@ -1,4 +1,4 @@
-# 🎲 Jogo de Dados
+#Jogo de Dados
 
 Jogo para 2 jogadores, disputado em 5 rodadas. Em cada rodada, cada
 jogador joga dois dados e vence quem tirar a maior soma. Ao final das
