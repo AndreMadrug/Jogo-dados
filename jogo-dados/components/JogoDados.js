@@ -40,7 +40,7 @@ export default function JogoDados() {
 
     const novosDados = [rolarDado(), rolarDado()];
 
-    // Jogador 1 joga primeiro: apenas guarda o resultado e passa a vez.
+    
     if (jogador === 1) {
       setEstado((atual) => ({
         ...atual,
