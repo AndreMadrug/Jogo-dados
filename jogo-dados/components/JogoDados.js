@@ -13,7 +13,7 @@ function rolarDado() {
 function estadoInicial() {
   return {
     rodada: 1,
-    turno: 1, // 1 = vez do Jogador 1, 2 = vez do Jogador 2
+    turno: 1,
     dadosJogador1: [null, null],
     dadosJogador2: [null, null],
     placar: { 1: 0, 2: 0 },
@@ -51,7 +51,7 @@ export default function JogoDados() {
       return;
     }
 
-    // Jogador 2 joga por último: fecha a rodada e calcula o resultado.
+    
     setEstado((atual) => {
       const somaJogador1 = atual.dadosJogador1[0] + atual.dadosJogador1[1];
       const somaJogador2 = novosDados[0] + novosDados[1];
