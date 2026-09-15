@@ -14,7 +14,7 @@ function rolarDado() {
 export default function JogoDados() {
  
   const [rodada, setRodada] = useState(1);
-  const [vez, setVez] = useState(1); // 1 = vez do Jogador 1, 2 = vez do Jogador 2
+  const [vez, setVez] = useState(1); 
   const [dadosJogador1, setDadosJogador1] = useState([null, null]);
   const [dadosJogador2, setDadosJogador2] = useState([null, null]);
   const [vitorias1, setVitorias1] = useState(0);
