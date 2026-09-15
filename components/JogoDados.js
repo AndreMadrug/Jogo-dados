@@ -31,6 +31,7 @@ export default function JogoDados() {
   }
 
   
+    function jogarJogador2() {
     const novosDados = [rolarDado(), rolarDado()];
     setDadosJogador2(novosDados);
 
