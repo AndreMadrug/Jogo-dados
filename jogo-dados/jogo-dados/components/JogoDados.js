@@ -6,14 +6,13 @@ import styles from "./JogoDados.module.css";
 
 const TOTAL_RODADAS = 5;
 
-// Sorteia um número de 1 a 6, como um dado de verdade.
+
 function rolarDado() {
   return Math.floor(Math.random() * 6) + 1;
 }
 
 export default function JogoDados() {
-  // Cada informação do jogo fica em uma variável separada.
-  // Isso deixa mais fácil ver o que cada uma guarda.
+ 
   const [rodada, setRodada] = useState(1);
   const [vez, setVez] = useState(1); // 1 = vez do Jogador 1, 2 = vez do Jogador 2
   const [dadosJogador1, setDadosJogador1] = useState([null, null]);
@@ -23,7 +22,7 @@ export default function JogoDados() {
   const [mensagem, setMensagem] = useState("Jogador 1, jogue os dados!");
   const [jogoAcabou, setJogoAcabou] = useState(false);
 
-  // O Jogador 1 joga primeiro: só sorteia os dados e passa a vez.
+  
   function jogarJogador1() {
     const novosDados = [rolarDado(), rolarDado()];
     setDadosJogador1(novosDados);
@@ -31,8 +30,7 @@ export default function JogoDados() {
     setMensagem("Jogador 2, jogue os dados!");
   }
 
-  // O Jogador 2 joga por último: fecha a rodada e calcula o resultado.
-  function jogarJogador2() {
+  
     const novosDados = [rolarDado(), rolarDado()];
     setDadosJogador2(novosDados);
 
@@ -56,7 +54,7 @@ export default function JogoDados() {
     setVitorias1(totalVitorias1);
     setVitorias2(totalVitorias2);
 
-    // Se essa era a última rodada, o jogo termina aqui.
+    
     if (rodada === TOTAL_RODADAS) {
       let resultadoFinal = "";
       if (totalVitorias1 > totalVitorias2) {
