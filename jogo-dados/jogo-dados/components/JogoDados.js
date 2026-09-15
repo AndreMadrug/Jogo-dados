@@ -70,14 +70,14 @@ export default function JogoDados() {
       return;
     }
 
-    // Senão, prepara a próxima rodada.
+   
     setMensagem(resultadoRodada);
     setRodada(rodada + 1);
     setVez(1);
     setDadosJogador1([null, null]);
   }
 
-  // Reinicia tudo do zero.
+  
   function jogarNovamente() {
     setRodada(1);
     setVez(1);
