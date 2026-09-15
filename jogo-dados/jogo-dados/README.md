@@ -1,4 +1,4 @@
-# 🎲 Jogo de Dados
+ Jogo de Dados
 
 Jogo para 2 jogadores, disputado em 5 rodadas. Em cada rodada, cada
 jogador joga dois dados e vence quem tirar a maior soma. Ao final das
@@ -6,7 +6,7 @@ jogador joga dois dados e vence quem tirar a maior soma. Ao final das
 
 Feito com **Next.js** (App Router) e React puro (sem bibliotecas extras).
 
-## Estrutura do projeto
+ Estrutura do projeto
 
 ```
 jogo-dados/
@@ -25,7 +25,7 @@ jogo-dados/
 └── next.config.mjs
 ```
 
-## Como rodar localmente
+ Como rodar localmente
 
 Você vai precisar do [Node.js](https://nodejs.org/) instalado (versão 18 ou
 superior).
@@ -43,9 +43,9 @@ npm run dev
 
 Depois abra **http://localhost:3000** no navegador.
 
-## Passo a passo para a entrega
+ Passo a passo para a entrega
 
-### 1. Subir o projeto no GitHub
+ 1. Subir o projeto no GitHub
 
 ```bash
 cd jogo-dados
@@ -67,7 +67,7 @@ git push -u origin main
 O link do repositório (`https://github.com/SEU_USUARIO/jogo-dados`) é o
 primeiro item da entrega.
 
-### 2. Publicar na Vercel
+ 2. Publicar na Vercel
 
 1. Acesse [vercel.com](https://vercel.com) e faça login (pode usar sua
    conta do GitHub).
@@ -81,7 +81,7 @@ primeiro item da entrega.
 
 Qualquer novo `git push` para o `main` gera um novo deploy automático.
 
-### 3. Gravar o vídeo (até 30 segundos)
+ 3. Gravar o vídeo (até 30 segundos)
 
 Grave a tela mostrando, na sequência:
 1. Uma partida sendo jogada (alguns cliques em "Jogar" para os dois
@@ -93,7 +93,7 @@ Grave a tela mostrando, na sequência:
 Suba o vídeo no YouTube como **Público** ou **Não listado** (nunca
 Privado) e use esse link como terceiro item da entrega.
 
-## Como o jogo funciona (lógica)
+ Como o jogo funciona 
 
 - O estado do jogo fica todo no componente `JogoDados` (`app/components`),
   usando `useState`.
@@ -112,7 +112,7 @@ Privado) e use esse link como terceiro item da entrega.
   jogadoras/jogadores e mostra a mensagem final, além do botão
   **"Jogar novamente"**, que reinicia todo o estado do zero.
 
-## Personalizando
+ Personalizando
 
 - As imagens dos dados estão em `public/dados/1.svg` … `6.svg` (e
   `vazio.svg` para o dado ainda não jogado). Você pode trocar por
